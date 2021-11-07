@@ -1,0 +1,25 @@
+import random
+y=0
+v=0
+for i in range(31):
+    a=int(input("what is your number/(1,2, or 3?"))
+    print("reconfirming, is your number: ", a)
+    if 31<=v:
+        print("you have lost")
+        break
+    if v==27:
+        x=3
+        if 30-v>=3:
+            x=30-v
+    x=random.randint(1,3)
+    print("the AI has chosen: ",x)
+    v=a+x+v
+    print("till now, the sum is",v)
+    if 31<=v:
+        print("you have won")
+        break
+    if x+a>=31:
+        print("the AI has won, better luck next time")
+        break
+
+
